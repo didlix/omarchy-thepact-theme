@@ -12,7 +12,7 @@ things that matter.
 ## Install
 
 ```sh
-omarchy theme install https://github.com/didlix/omarchy-theme.thepact
+omarchy theme install https://github.com/didlix/omarchy-thepact-theme
 ```
 
 ## The font
