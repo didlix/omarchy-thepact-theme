@@ -24,10 +24,11 @@ sudo pacman -S ttf-3270-nerd
 omarchy font set "3270 Nerd Font Mono"
 ```
 
-3270 renders ~25% smaller than typical monospace fonts at the same point
-size, which skews Omarchy's `display text size` knob (it drives shell, GTK,
-and terminal sizes in lockstep). Fix it once with a fontconfig rule in
-`~/.config/fontconfig/fonts.conf`:
+3270 renders noticeably smaller than typical monospace fonts at the same
+point size, which skews Omarchy's `display text size` knob (it drives
+shell, GTK, and terminal sizes in lockstep — set it for 3270 and GTK apps
+come out oversized). Correct the font itself, once, with a fontconfig rule
+in `~/.config/fontconfig/fonts.conf`:
 
 ```xml
 <match target="font">
@@ -37,6 +38,12 @@ and terminal sizes in lockstep). Fix it once with a fontconfig rule in
   </edit>
 </match>
 ```
+
+**1.45 is the recommended starting factor** — it makes 3270 sit visually
+alongside ordinary monospace fonts, so the text-size knob stays calibrated
+across shell, GTK, and terminals. Taste it and tune the single `<double>`
+(1.25–1.5 is the sensible range); terminals pick the change up in new
+windows. Remove the rule entirely if you switch away from 3270.
 
 ## Optional CRT effect
 
