@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="6144" height="3456" viewBox="0 0 6144 3456">
+  <defs>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowBig" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="14" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="6144" height="3456" fill="#05080a"/>
+
+  <!-- screen edge lines -->
+  <rect x="220" y="118" width="5704" height="4" fill="#8fd4e8" opacity="0.35"/>
+  <g filter="url(#glow)">
+    <rect x="300" y="3298" width="5544" height="8" fill="#efe9c8" opacity="0.9"/>
+  </g>
+
+  <!-- tiny corner tag -->
+  <g font-family="'3270 Nerd Font Mono'" font-size="30" fill="#5a97ac" opacity="0.8">
+    <rect x="220" y="152" width="20" height="34" fill="#e8942e" opacity="0.85"/>
+    <text x="258" y="180">SILO SECT</text>
+  </g>
+
+  <!-- pale separator bands framing the header (see PACT close-up) -->
+  <g filter="url(#glow)">
+    <rect x="220" y="204" width="5704" height="12" fill="#e8e4b8" opacity="0.85"/>
+    <rect x="220" y="402" width="5704" height="12" fill="#e8e4b8" opacity="0.85"/>
+  </g>
+
+  <!-- header: logo, name, menu grid, clock -->
+  <g filter="url(#glow)">
+    <rect x="220" y="236" width="104" height="104" fill="none" stroke="#e8b13e" stroke-width="6"/>
+    <rect x="244" y="260" width="34" height="56" fill="#e8b13e"/>
+    <rect x="244" y="260" width="56" height="22" fill="#e8b13e"/>
+  </g>
+  <text x="380" y="322" font-family="'3270 Nerd Font Mono'" font-size="76" letter-spacing="10" fill="#bfe6f2" filter="url(#glow)">PACT</text>
+
+  <g font-family="'3270 Nerd Font Mono'" font-size="42" fill="#6ac8e8" filter="url(#glow)">
+    <text x="900"  y="272">01 SERVICES</text>
+    <text x="1540" y="272">03 SYSTEM</text>
+    <text x="2180" y="272">05 SECURITY</text>
+    <text x="2820" y="272">07 UTILITIES</text>
+    <text x="3460" y="272">09 RECYCLE</text>
+    <text x="900"  y="348">02 STATUS</text>
+    <text x="1540" y="348">04 MEDICAL</text>
+    <text x="2180" y="348">06 EMERGENCY</text>
+    <text x="2820" y="348">08 PRIVACY</text>
+    <text x="3460" y="348">10 CONTACT</text>
+  </g>
+
+  <text x="5924" y="340" text-anchor="end" font-family="'3270 Nerd Font Mono'" font-size="150" fill="#e8942e" filter="url(#glowBig)">08:00:28</text>
+
+  <!-- menu button row -->
+  <g font-family="'3270 Nerd Font Mono'" filter="url(#glow)">
+    <rect x="220" y="452" width="560" height="110" fill="#e8e0a2" opacity="0.92"/>
+    <text x="260" y="526" font-size="46" fill="#403a22">MESSAGE</text>
+    <text x="742" y="492" font-size="28" fill="#403a22" text-anchor="end">1</text>
+  </g>
+  <g font-family="'3270 Nerd Font Mono'" font-size="46" fill="#6ac8e8" stroke-width="4" filter="url(#glow)">
+    <g>
+      <rect x="820" y="452" width="560" height="110" fill="none" stroke="#4fb8d8"/>
+      <text x="860" y="526">CONTRACTS</text>
+      <text x="1342" y="492" font-size="28" text-anchor="end">2</text>
+    </g>
+    <g>
+      <rect x="1420" y="452" width="560" height="110" fill="none" stroke="#4fb8d8"/>
+      <text x="1460" y="526">COMPOSE</text>
+      <text x="1942" y="492" font-size="28" text-anchor="end">3</text>
+    </g>
+    <g>
+      <rect x="2020" y="452" width="560" height="110" fill="none" stroke="#4fb8d8"/>
+      <text x="2060" y="526">REGISTRY</text>
+      <text x="2542" y="492" font-size="28" text-anchor="end">4</text>
+    </g>
+    <g>
+      <rect x="2620" y="452" width="560" height="110" fill="none" stroke="#4fb8d8"/>
+      <text x="2660" y="526">SEARCH</text>
+      <text x="3142" y="492" font-size="28" text-anchor="end">5</text>
+    </g>
+    <g>
+      <rect x="3220" y="452" width="560" height="110" fill="none" stroke="#4fb8d8"/>
+      <text x="3260" y="526">WORK</text>
+      <text x="3742" y="492" font-size="28" text-anchor="end">6</text>
+    </g>
+    <g>
+      <rect x="3820" y="452" width="560" height="110" fill="none" stroke="#4fb8d8"/>
+      <text x="3860" y="526">DELETE</text>
+      <text x="4342" y="492" font-size="28" text-anchor="end">7</text>
+    </g>
+  </g>
+
+  <!-- central panel, double frame -->
+  <g filter="url(#glow)">
+    <rect x="1972" y="800" width="2200" height="2350" fill="none" stroke="#4fb8d8" stroke-width="6"/>
+    <rect x="1992" y="820" width="2160" height="2310" fill="none" stroke="#4fb8d8" stroke-width="2" opacity="0.5"/>
+  </g>
+
+  <!-- top pills -->
+  <g font-family="'3270 Nerd Font Mono'" font-size="44" text-anchor="middle" filter="url(#glow)">
+    <rect x="2862" y="906"  width="420" height="66" rx="33" fill="none" stroke="#4fb8d8" stroke-width="4"/>
+    <text x="3072" y="954" fill="#6ac8e8">FILE</text>
+    <rect x="2862" y="1000" width="420" height="66" rx="33" fill="none" stroke="#4fb8d8" stroke-width="4"/>
+    <text x="3072" y="1048" fill="#6ac8e8">VIEW</text>
+    <rect x="2862" y="1094" width="420" height="66" rx="33" fill="none" stroke="#e8b13e" stroke-width="4"/>
+    <text x="3072" y="1142" fill="#e8b13e">GO</text>
+  </g>
+
+  <!-- headline -->
+  <text x="3072" y="1720" text-anchor="middle" font-family="'3270 Nerd Font Mono'" font-size="82" letter-spacing="14" fill="#bfe6f2" filter="url(#glow)">PREGNANCY OPPORTUNITY TIME</text>
+  <text x="3072" y="1850" text-anchor="middle" font-family="'3270 Nerd Font Mono'" font-size="60" letter-spacing="8" fill="#8fd4e8" filter="url(#glow)">DAYS</text>
+
+  <!-- yellow counter -->
+  <g filter="url(#glowBig)">
+    <rect x="2792" y="1930" width="560" height="300" rx="44" fill="#ece5a4" stroke="#f5efc0" stroke-width="8"/>
+    <text x="3072" y="2148" text-anchor="middle" font-family="'3270 Nerd Font Mono'" font-size="190" fill="#403a22">364</text>
+  </g>
+
+  <!-- HRS / MNS -->
+  <g font-family="'3270 Nerd Font Mono'" text-anchor="middle" filter="url(#glow)">
+    <text x="2370" y="2010" font-size="48" fill="#8fd4e8">HRS</text>
+    <rect x="2250" y="2050" width="240" height="96" rx="48" fill="none" stroke="#4fb8d8" stroke-width="4"/>
+    <text x="2370" y="2118" font-size="60" fill="#6ac8e8">23</text>
+    <text x="3774" y="2010" font-size="48" fill="#8fd4e8">MNS</text>
+    <rect x="3654" y="2050" width="240" height="96" rx="48" fill="none" stroke="#4fb8d8" stroke-width="4"/>
+    <text x="3774" y="2118" font-size="60" fill="#6ac8e8">59</text>
+  </g>
+
+  <!-- bottom pills -->
+  <g font-family="'3270 Nerd Font Mono'" font-size="40" text-anchor="middle" filter="url(#glow)">
+    <rect x="2882" y="2560" width="380" height="60" rx="30" fill="none" stroke="#4fb8d8" stroke-width="4"/>
+    <text x="3072" y="2603" fill="#6ac8e8">HELP</text>
+    <rect x="2882" y="2646" width="380" height="60" rx="30" fill="none" stroke="#4fb8d8" stroke-width="4"/>
+    <text x="3072" y="2689" fill="#6ac8e8">ACCOUNT</text>
+    <rect x="2882" y="2732" width="380" height="60" rx="30" fill="none" stroke="#e8b13e" stroke-width="4"/>
+    <text x="3072" y="2775" fill="#e8b13e">EXIT</text>
+  </g>
+</svg>

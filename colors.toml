@@ -1,0 +1,40 @@
+mode = "dark"
+
+# Silo (Apple TV) terminal palette. Teal phosphor text on near-black,
+# judicial yellow-green as the accent, medical yellow + PACT amber for
+# warnings, PACT cyan-blue for info.
+
+accent = "#c8da7c"
+selection = "#1d3a32"
+muted = "#3f5f55"
+
+background = "#0a1110"
+dark_background = "#070c0b"
+darker_background = "#040807"
+lighter_background = "#142420"
+
+foreground = "#9fd6c6"
+dark_foreground = "#4d7a6e"
+light_foreground = "#c5e6da"
+bright_foreground = "#e2f4ec"
+
+active_border_color = "#9fd6c6"
+active_tab_background = "#5fb8dc"
+hyprland_active_border = "rgba(9fd6c6ee)"
+hyprland_inactive_border = "rgba(28453c99)"
+
+red = "#cf6a5a"
+yellow = "#e3d96e"
+orange = "#e8942e"
+green = "#7ee0c8"
+cyan = "#86d7d3"
+blue = "#5fb8dc"
+magenta = "#b490b0"
+brown = "#6b6b50"
+
+bright_red = "#e08573"
+bright_yellow = "#f0e88c"
+bright_green = "#98efd6"
+bright_cyan = "#a5e8e4"
+bright_blue = "#85cdea"
+bright_magenta = "#c9a8c6"

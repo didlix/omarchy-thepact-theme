@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1340" height="380" viewBox="0 0 1340 380">
+  <defs>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <g fill="#e8b13e" filter="url(#glow)">
+    <rect x="30" y="40" width="220" height="110"/>
+    <rect x="140" y="150" width="110" height="110"/>
+    <rect x="30" y="260" width="110" height="110"/>
+  </g>
+  <text x="380" y="318" font-family="'3270 Nerd Font Mono'" font-size="300" letter-spacing="46" fill="#d8d49a" filter="url(#glow)">PACT</text>
+</svg>

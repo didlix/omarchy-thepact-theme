@@ -1,0 +1,151 @@
+# Silo shell surfaces. Everything is drawn like the show's terminals:
+# opaque near-black panels, thin 1px cyan-blue frame lines, teal text.
+# Yellow-green (judicial) marks selection; medical yellow marks things
+# needing attention; PACT amber is reserved for the clock and alerts.
+
+[bar]
+background       = "#040807"
+background-alpha = 1.0
+text             = "#9fd6c6"
+active           = "#e8942e"
+# Custom key read by the pact.clock widget: the PACT clock amber.
+clock            = "#e8942e"
+scale-with-font  = true
+# Tall enough for the pact.bar chrome: two-row sections + boxed widget group.
+size-horizontal  = 44
+size-vertical    = 28
+
+[controls]
+normal-color        = "#9fd6c6"
+normal-fill-alpha   = 0.03
+normal-border       = "#4fb8d8"
+normal-border-width = 1
+normal-border-alpha = 0.55
+
+hover-cursor-color        = "#c5e6da"
+hover-cursor-fill-alpha   = 0.08
+hover-cursor-border       = "#4fb8d8"
+hover-cursor-border-width = 1
+hover-cursor-border-alpha = 0.9
+
+focus-color        = "#c5e6da"
+focus-fill-alpha   = 0.08
+focus-border       = "#4fb8d8"
+focus-border-width = 1
+focus-border-alpha = 0.9
+
+selected-color        = "#c8da7c"
+selected-fill-alpha   = 0.16
+selected-border       = "#c8da7c"
+selected-border-width = 1
+selected-border-alpha = 0.8
+
+pressed-fill-alpha   = 0.22
+selection-fill-alpha = 0.35
+
+[popups]
+background       = "#040807"
+background-alpha = 1.0
+text             = "#9fd6c6"
+border           = "#4fb8d8"
+border-alpha     = 1.0
+border-width     = 1
+
+[tooltip]
+background       = "#040807"
+background-alpha = 0.97
+text             = "#9fd6c6"
+border           = "#3f6f63"
+border-alpha     = 1.0
+
+[notifications]
+background       = "#040807"
+background-alpha = 1.0
+text             = "#9fd6c6"
+# Medical-screen yellow: the "364" readout box.
+border           = "#e3d96e"
+border-alpha     = 1.0
+border-width     = 1
+countdown        = "#e8942e"
+
+[launcher]
+background                = "#060b0a"
+background-alpha          = 0.97
+text                      = "#9fd6c6"
+border                    = "#4fb8d8"
+border-alpha              = 1.0
+scrim                     = "#040807"
+scrim-alpha               = 0.6
+selected-background       = "#c8da7c"
+selected-background-alpha = 0.12
+selected-text             = "#c8da7c"
+selected-border           = "#c8da7c"
+selected-border-alpha     = 1.0
+
+[menu]
+background                = "#060b0a"
+background-alpha          = 1.0
+text                      = "#9fd6c6"
+border                    = "#4fb8d8"
+border-alpha              = 1.0
+scrim                     = "#040807"
+scrim-alpha               = 0.6
+selected-background       = "#c8da7c"
+selected-background-alpha = 0.12
+selected-text             = "#c8da7c"
+selected-border           = "#c8da7c"
+selected-border-alpha     = 1.0
+
+[polkit]
+background       = "#040807"
+background-alpha = 1.0
+text             = "#9fd6c6"
+text-error       = "#cf6a5a"
+# Authorisation prompts get judicial yellow, like SEARCH AUTHORIZATION bars.
+border           = "#e3d96e"
+border-error     = "#cf6a5a"
+border-alpha     = 1.0
+scrim            = "#040807"
+scrim-alpha      = 0.6
+accent           = "#c8da7c"
+
+[lock]
+background       = "#040807"
+background-alpha = 0.85
+text             = "#9fd6c6"
+placeholder      = "#4d7a6e"
+text-error       = "#cf6a5a"
+border           = "#3f6f63"
+border-active    = "#9fd6c6"
+border-error     = "#cf6a5a"
+border-alpha     = 1.0
+selection        = "#c8da7c"
+selection-alpha  = 0.45
+
+[pact]
+# Consumed by the pact.bar plugin (chrome colours; the strip plugin that
+# formerly read `strip = "on"` here is retired in favour of pact.bar).
+#
+# THE PACT UNIT (design standard): the side of each emblem square and the
+# thickness of every pale band are one dimension, and bands/emblem share one
+# colour (`band` below). The unit defaults to Style.space(10) — scales with
+# `omarchy display text size` — or pin it in px here:
+# unit = 12
+titlebar         = "#9fd6c6"
+strip-background = "#040807"
+band             = "#e8e4b8"
+frame            = "#4fb8d8"
+text             = "#6ac8e8"
+dim-text         = "#3f6f80"
+wordmark         = "#bfe6f2"
+amber            = "#e8942e"
+selected         = "#c8da7c"
+
+[image-picker]
+scrim                   = "#040807"
+scrim-alpha             = 0.6
+text                    = "#9fd6c6"
+selected-border         = "#c8da7c"
+selected-border-alpha   = 1.0
+unselected-border       = "#9fd6c6"
+unselected-border-alpha = 0.28

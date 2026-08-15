@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="6144" height="3456" viewBox="0 0 6144 3456">
+  <defs>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="10" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowSoft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="6144" height="3456" fill="#05080a"/>
+
+  <!-- PACT emblem, per the show: a top rectangle, a square below its right
+       side, and a detached square at bottom-left -->
+  <g filter="url(#glowSoft)" fill="#e8b13e">
+    <rect x="2700" y="1412" width="220" height="110"/>
+    <rect x="2810" y="1522" width="110" height="110"/>
+    <rect x="2700" y="1632" width="110" height="110"/>
+  </g>
+  <text x="3070" y="1690" font-family="'3270 Nerd Font Mono'" font-size="300" letter-spacing="46" fill="#d8d49a" filter="url(#glow)">PACT</text>
+
+</svg>
