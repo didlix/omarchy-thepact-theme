@@ -33,7 +33,7 @@ and terminal sizes in lockstep). Fix it once with a fontconfig rule in
 <match target="font">
   <test name="family" compare="contains"><string>3270</string></test>
   <edit name="pixelsize" mode="assign">
-    <times><name>pixelsize</name><double>1.35</double></times>
+    <times><name>pixelsize</name><double>1.45</double></times>
   </edit>
 </match>
 ```
